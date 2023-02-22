@@ -19,17 +19,16 @@ public class KendaliLogin {
     public String getPref(Context ctx, String key)
     {
         SP = PreferenceManager.getDefaultSharedPreferences(ctx);
-        String tampung = SP.getString(key, null);
-        return tampung;
+        return  SP.getString(key, null);
     }
     public Boolean isLogin(Context ctx, String key)
     {
-        SP = PreferenceManager.getDefaultSharedPreferences(ctx);
-        String tampung = SP.getString(key,null);
-        if(tampung != null){
+        if(this.getPref(ctx, key) != null)
+        {
             return true;
         }
-        else{
+        else
+        {
             return false;
         }
     }
