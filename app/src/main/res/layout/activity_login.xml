@@ -5,35 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="16dp"
-    tools:context=".MainActivity">
-
+    android:layout_margin="18dp"
+    tools:context=".LoginActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="WELCOME BACK"
-        android:gravity="center_horizontal"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="30dp"
-        />
-    <TextView
-        android:id="@+id/tv_sesi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="xxxxxxxxxxxx"
+        android:text="COBA LOGIN"
         android:gravity="center_horizontal"
         android:textSize="25sp"
-        />  
-    <Button
-        android:id="@+id/btn_logout"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_marginBottom="30dp"
+        />
+    <EditText
+        android:id="@+id/et_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BUTTON"
-        android:layout_marginTop="30dp"
-        android:onClick="ProsesLogOut"
+        android:hint="Username"
+        android:textColorHint="#008EFF"
+        android:inputType="text"
         />
-
-
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#008EFF"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:onClick="prosesLogin"
+        />
 </LinearLayout>
