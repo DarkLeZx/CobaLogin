@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="18dp"
-    android:background="@drawable/zygeko"
     tools:context=".LoginActivity">
 
     <TextView
